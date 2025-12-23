@@ -1,13 +1,12 @@
 class Solution(object):
+
+    
     def quickSort(self, nums):
-        k = 0
         for x in range( len(nums) ):
             for y in range(0, len(nums) - x - 1):
                            if nums[y] > nums[y + 1]:
                                 nums[y], nums[y +1] = nums[y + 1], nums[y]
-        
-
-        # OR
+    
         print(nums)
 
 solution = Solution()
