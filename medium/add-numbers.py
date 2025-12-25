@@ -21,8 +21,9 @@ class Solution(object):
         l2_str = ''
         for x in range(len(l2)):
             l2_str += str(l2[x])
-        
         print(l1_str, l2_str)
+
+        # TRANSFORMAR EM NÚMEROS INTEIROS E SOMAR
         k = int(l1_str) + int(l2_str)
         print(f"O resultado total da soma de {l1_str} + {l2_str}, é: {k}")
 
