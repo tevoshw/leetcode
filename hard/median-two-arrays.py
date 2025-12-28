@@ -10,17 +10,16 @@ class Solution(object):
                     array[y], array[y + 1] = array[y + 1], array[y]
 
         # GET THE MEDIAN OF THE ARRAY
-        print( len(array) )
-        print( len(array) / 2)
-        print( int(len(array) / 2))
-
         if len(array) % 2 != 0:
             median = array[int(len(array) / 2)]
+            return median
         else:
-            median = (array[int( (len(array) / 2) - 1)] + array[int( (len(array) / 2) )]) / 2
-            median.float()
+            median = float((array[int( (len(array) / 2) - 1)] + array[int( (len(array) / 2) )])) / 2
+            return median
 
        
 
 solution = Solution()
-solution.findMedianSortedArrays([1,2], [3,4])
+result1 = solution.findMedianSortedArrays([1,3], [2])
+result2 = solution.findMedianSortedArrays([1,2], [3,4])
+print(f"The median of the first was: {result1}, and the median of the second was: {result2}")
